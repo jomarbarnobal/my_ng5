@@ -1,0 +1,31 @@
+.skill-icon {
+  margin-top: -46px;
+  display: block;
+  height: auto;
+  padding-bottom: 46px;
+  i.circle {
+    background-color: #EEEFE5;
+    padding: 10px;
+  }
+}
+
+.show-on-small {
+  display: none;
+}
+
+.service-devider {
+    border-top: 2px solid rgb(218, 103, 107);
+    width: 60px;
+    margin: 50px auto 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .skill-icon {
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .skill-section {
+    margin-top: 30px;
+  }
+}

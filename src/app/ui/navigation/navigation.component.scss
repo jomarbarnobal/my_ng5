@@ -1,0 +1,40 @@
+nav .nav-header {
+    word-wrap: break-word;
+    clear: both;
+    padding: 40px 0;
+}
+
+nav .nav-background {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .1;
+}
+
+nav .nav-background .tint {
+    top: 0;
+    bottom: 0;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    max-width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: opacity .7s;
+    background-size: cover;
+}
+
+nav {
+    position: relative;
+    top: 0;
+    transition: background-color .3s, opacity .2s, visibility 0s;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
