@@ -1,0 +1,27 @@
+<ul id="slide-out" class="side-nav fixed">
+  <div class="nopad">
+    <li><a href="#!"><i class="material-icons">navigation</i></a></li>
+    <li><a href="#!">  <i class="material-icons">person_pin</i></a></li>
+  </div>
+</ul>
+
+<mz-sidenav
+  [id]="'sidenav-demo'"
+  [collapseButtonId]="'sidenav-show'">
+  <mz-sidenav-link>
+    <a href="#">First Link</a>
+  </mz-sidenav-link>
+  <mz-sidenav-divider></mz-sidenav-divider>
+  <mz-sidenav-link [active]="true">
+    <a href="#">Active Link</a>
+  </mz-sidenav-link>
+  <mz-sidenav-divider></mz-sidenav-divider>
+  <mz-sidenav-link>
+    <a href="#" class="waves-effect">Second Link With Waves</a>
+  </mz-sidenav-link>
+
+</mz-sidenav>
+
+ <button mz-button id="sidenav-show">
+  Open
+</button>

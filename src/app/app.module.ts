@@ -6,38 +6,27 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { Angular2TokenService } from 'angular2-token'
 
+
 import { 
   MzParallaxModule,
   MzButtonModule, 
   MzInputModule,
   MzNavbarModule,
-  MzCardModule
+  MzCardModule,
+  MzSidenavModule
   } from 'ng2-materialize';
 
-import { AdminComponent } from './auth/admin';
-import { HomeCompoent } from './home';
+
 import { AppComponent } from './app.component';
-import { NavigationComponent } from './ui/navigation/navigation.component';
-import { FooterComponent } from './ui/footer/footer.component';
-import { MainComponent } from './ui/main/main.component';
-import { CardComponent } from './ui/card/card.component';
-import { AboutComponent } from './ui/about/about.component';
-import { ServicesComponent } from './ui/service/service.component';
-import { AuthLinksComponent } from './auth/auth-links.component';
-import { AuthService } from './auth/auth.service';
+import { HomeComponent } from './pages/home/home.component';
+import { SideNavComponent } from './ui/sidenav/sidenav.compoent';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminComponent,
-    HomeCompoent,
-    NavigationComponent,
-    FooterComponent,
-    MainComponent,
-    CardComponent,
-    AuthLinksComponent,
-    AboutComponent,
-    ServicesComponent
+    HomeComponent,
+    SideNavComponent
   ],
 
   imports: [
@@ -51,10 +40,10 @@ import { AuthService } from './auth/auth.service';
     MzParallaxModule,
     MzNavbarModule,
     MzCardModule,
+    MzSidenavModule,
     ReactiveFormsModule
   ],
   providers: [
-    AuthService,
     Angular2TokenService
   ],
   bootstrap: [AppComponent]

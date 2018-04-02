@@ -11,3 +11,13 @@ a {
 nav i.material-icons {
   font-size: 40px !important;
 }
+
+header, main, footer {
+  padding-left: 51px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+  padding-left: 0;
+  }
+}

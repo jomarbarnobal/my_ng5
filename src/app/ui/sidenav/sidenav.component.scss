@@ -1,0 +1,18 @@
+.side-nav {
+  width: 50px;
+}
+
+.side-nav li>a {
+  padding: 0 10px;
+}
+
+.nopad {
+    display: block;
+    text-align: center;
+    position: absolute;
+    height: 210px;
+    top: 45%;
+    margin-top: -120px;
+    width: 100%;
+    padding: 70px 0;
+}
