@@ -17,27 +17,29 @@ import {
 import { AdminComponent } from './auth/admin';
 import { HomeCompoent } from './home';
 import { AppComponent } from './app.component';
-import { NavigationComponent } from './ui/navigation/navigation.component';
-import { FooterComponent } from './ui/footer/footer.component';
-import { MainComponent } from './ui/main/main.component';
-import { CardComponent } from './ui/card/card.component';
-import { AboutComponent } from './ui/about/about.component';
-import { ServicesComponent } from './ui/service/service.component';
+// import { NavigationComponent } from './ui/navigation/navigation.component';
+// import { FooterComponent } from './ui/footer/footer.component';
+// import { MainComponent } from './ui/main/main.component';
+// import { CardComponent } from './ui/card/card.component';
+// import { AboutComponent } from './ui/about/about.component';
+// import { ServicesComponent } from './ui/service/service.component';
+// import { ContactComponent } from './ui/contact/contact.component';
 import { AuthLinksComponent } from './auth/auth-links.component';
 import { AuthService } from './auth/auth.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminComponent,
-    HomeCompoent,
-    NavigationComponent,
-    FooterComponent,
-    MainComponent,
-    CardComponent,
-    AuthLinksComponent,
-    AboutComponent,
-    ServicesComponent
+    // AdminComponent,
+    HomeCompoent
+    // NavigationComponent,
+    // FooterComponent,
+    // MainComponent,
+    // CardComponent,
+    // AuthLinksComponent,
+    // AboutComponent,
+    // ServicesComponent,
+    // ContactComponent
   ],
 
   imports: [
