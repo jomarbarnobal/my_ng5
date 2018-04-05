@@ -1,9 +1,18 @@
-<ul id="slide-out" class="side-nav fixed">
-  <div class="nopad">
-    <li><a href="#!"><i class="material-icons">navigation</i></a></li>
-    <li><a href="#!">  <i class="material-icons">person_pin</i></a></li>
-  </div>
-</ul>
+<div class="side-nav fixed">
+  <ul class="nopad">
+    <li><a routerLink="/home" [routerLinkActive]="['active']"> <i class="small icon-home"></i></a></li>
+    <li><a routerLink="/about" [routerLinkActive]="['active']"> <i class="small icon-star"></i></a></li>
+  </ul>
+
+  <ul class="social">
+    <li><a href="#"> <i class="icon-social-facebook"></i></a></li>
+    <li><a href="#"> <i class="icon-social-twitter"></i></a></li>
+    <li><a href="#"> <i class="icon-social-github"></i></a></li>
+  </ul>
+
+</div>
+
+
 
 <mz-sidenav
   [id]="'sidenav-demo'"

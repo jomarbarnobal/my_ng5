@@ -23,9 +23,11 @@
     "@angular/router": "^5.2.0",
     "angular2-token": "^0.2.0-beta.14",
     "core-js": "^2.4.1",
+    "css-animator": "^2.3.0",
     "mdi": "^2.1.19",
     "ng2-materialize": "^1.8.0-beta.0",
     "rxjs": "^5.5.6",
+    "simple-line-icons": "^2.4.1",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {

@@ -4,8 +4,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-import { Angular2TokenService } from 'angular2-token'
-
+import { Angular2TokenService } from 'angular2-token';
 
 import { 
   MzParallaxModule,
@@ -20,13 +19,17 @@ import {
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SideNavComponent } from './ui/sidenav/sidenav.compoent';
+import { AboutComponent } from './pages/about/about.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SideNavComponent
+    SideNavComponent,
+    AboutComponent,
   ],
 
   imports: [
@@ -41,7 +44,8 @@ import { SideNavComponent } from './ui/sidenav/sidenav.compoent';
     MzNavbarModule,
     MzCardModule,
     MzSidenavModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [
     Angular2TokenService
