@@ -1,7 +1,25 @@
+$simple-line-font-path: "~simple-line-icons/fonts/";
+@import "~simple-line-icons/scss/simple-line-icons";
+
 /* You can add global styles to this file, and also import other style files */
+html, body,{
+    height: 100%;
+    // overflow: hidden;
+} 
+
+.section-wrapper {
+  // height: 90vh;
+  padding-top: 10%;
+  overflow: hidden !important;
+  .section-content{
+    position: relative;
+  }
+}
+  
 body {
-  color: #373648;
-  background-color: #EEEFE5;
+  color: #fff;
+  // background-color: #EEEFE5;
+  background: #252627;
 }
 
 a {
@@ -10,4 +28,18 @@ a {
 
 nav i.material-icons {
   font-size: 40px !important;
+}
+
+header, main, footer {
+  // padding-left: 60px;
+}
+
+i.small {
+  font-size: 1.6rem !important;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+  padding-left: 0;
+  }
 }

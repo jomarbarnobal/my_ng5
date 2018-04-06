@@ -4,42 +4,35 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-import { Angular2TokenService } from 'angular2-token'
+import { Angular2TokenService } from 'angular2-token';
+
 
 import { 
   MzParallaxModule,
   MzButtonModule, 
   MzInputModule,
   MzNavbarModule,
-  MzCardModule
+  MzCardModule,
+  MzSidenavModule
   } from 'ng2-materialize';
 
-import { AdminComponent } from './auth/admin';
-import { HomeCompoent } from './home';
+
 import { AppComponent } from './app.component';
-// import { NavigationComponent } from './ui/navigation/navigation.component';
-// import { FooterComponent } from './ui/footer/footer.component';
-// import { MainComponent } from './ui/main/main.component';
-// import { CardComponent } from './ui/card/card.component';
-// import { AboutComponent } from './ui/about/about.component';
-// import { ServicesComponent } from './ui/service/service.component';
-// import { ContactComponent } from './ui/contact/contact.component';
-import { AuthLinksComponent } from './auth/auth-links.component';
-import { AuthService } from './auth/auth.service';
+import { HomeComponent } from './pages/home/home.component';
+import { SideNavComponent } from './ui/sidenav/sidenav.compoent';
+import { AboutComponent } from './pages/about/about.component';
+import { ExpertiesComponent } from './pages/experties/experties.component';
+import { ProjectComponent } from './pages/works/project.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
-    // AdminComponent,
-    HomeCompoent
-    // NavigationComponent,
-    // FooterComponent,
-    // MainComponent,
-    // CardComponent,
-    // AuthLinksComponent,
-    // AboutComponent,
-    // ServicesComponent,
-    // ContactComponent
+    HomeComponent,
+    SideNavComponent,
+    AboutComponent,
+    ExpertiesComponent,
+    ProjectComponent
   ],
 
   imports: [
@@ -53,12 +46,13 @@ import { AuthService } from './auth/auth.service';
     MzParallaxModule,
     MzNavbarModule,
     MzCardModule,
-    ReactiveFormsModule
+    MzSidenavModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [
-    AuthService,
     Angular2TokenService
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
