@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { Angular2TokenService } from 'angular2-token';
 
+
 import { 
   MzParallaxModule,
   MzButtonModule, 
@@ -20,9 +21,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SideNavComponent } from './ui/sidenav/sidenav.compoent';
 import { AboutComponent } from './pages/about/about.component';
-
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-
+import { ExpertiesComponent } from './pages/experties/experties.component';
+import { ProjectComponent } from './pages/works/project.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     HomeComponent,
     SideNavComponent,
     AboutComponent,
+    ExpertiesComponent,
+    ProjectComponent
   ],
 
   imports: [
@@ -52,4 +55,4 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

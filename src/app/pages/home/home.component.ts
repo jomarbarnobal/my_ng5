@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import { AnimationBuilder } from 'css-animator/builder';
-import { fadeInApp } from '../../_animations/fade-in.animation';
+// import { staggerTransition } from '../../_animations/stagger.animation'
 
 @Component({
   templateUrl: 'home.component.html',
   styleUrls: [`home.component.scss`],
-  animations: [ fadeInApp ],
-  host: {'[@fadeInApp]': ''}
+  // animations: [ staggerTransition ],
+  // host: {'[@staggerTransition]': ''}
 })
 
-export class HomeComponent {
-  
+export class HomeComponent  {
+
+    
 }
