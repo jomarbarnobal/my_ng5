@@ -2,7 +2,7 @@ import {
   trigger, 
   stagger, 
   state, 
-  query as q, 
+  query, 
   animate, 
   transition, 
   style, 
@@ -10,69 +10,43 @@ import {
   group,
   animateChild } from '@angular/animations';
 
-// export const fadeInApp = trigger('fadeInApp', [
-//   state('*', style({
-//     position: 'fixed',
-//     color: '#fff',
-//     top: 0,
-//     left: 0,
-//     right: 0,
-//   })),
-//   transition(':enter', [
-//     style({
-//       transform: 'translateY(100px)',
-//       opacity: 0
-//     }),
-//     animate('1500ms ease-in', style({
-//       transform: 'translateY(0%)',
-//       opacity: 1,
-//     }))
-//   ]),
-//   transition(':leave', [
-//     animate('800ms ease-in', style({
-//       opacity: 0,
-//       transform: 'translateY(10%)',
-//     })),
-//   ]),
-// ])
-const query = (s,a,o={optional:true})=>q(s,a,o);
+
+// const query = (s,a,o={optional:true})=>q(s,a,o);
 
 export const routerTransition = trigger('routerTransition', [
-  transition('* => *', [
-    query(':enter, :leave', style({ 
+
+transition('* => *', [
+  query(':enter, :leave', style({ 
     position: 'fixed',
     color: '#fff',
-    // top: 0,
     left: 0,
-    right: 0, 
-  })),
+    right: 0
+  }), { optional: true} ),
   query(':enter', [
       style({ 
         opacity: 0,
         transform: 'translateY(50px)'}),
       animate('700ms ease-in', style({
-        transform: 'translateY(0px)',
-        opacity: 1,
+        transform: 'translateY(0)',
+        opacity: 1
         }))
-      ]),
+      ],{ optional: true}),
     sequence([
-      query(':leave', animateChild()), 
+      query(':leave', animateChild(),{ optional: true}),
       group([
         query(':leave', [
-          // style({ transform: 'translateY(0px)' }),
           animate('300ms ease-in', 
             style({ 
               transform: 'translateY(-15%)',
               opacity: 0
             }))
-        ]),    
+        ],{ optional: true}),    
         query(':enter', [
-          // style({ transform: 'translateY(10%)' }),
           animate('700ms ease-in', 
-            style({ transform: 'translateY(0px)' })),
-        ])
+            style({ transform: 'translateY(0)' }))
+        ],{ optional: true})
       ]),
-      query(':enter', animateChild()),
+      query(':enter', animateChild(),{ optional: true})
     ])
   ])
 ]);
