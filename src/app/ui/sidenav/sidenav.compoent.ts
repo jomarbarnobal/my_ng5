@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'sidenav',
+  selector: 'side-bar',
   templateUrl: 'sidenav.component.html',
   styleUrls: [`sidenav.component.scss`]
 })

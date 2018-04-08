@@ -4,22 +4,30 @@ $simple-line-font-path: "~simple-line-icons/fonts/";
 /* You can add global styles to this file, and also import other style files */
 html, body,{
     height: 100%;
-    // overflow: hidden;
 } 
 
 .section-wrapper {
-  // height: 90vh;
-  padding-top: 10%;
-  overflow: hidden !important;
+  // padding-top: 50px;
   .section-content{
-    position: relative;
+    // position: relative;
   }
 }
-  
+
+.sidenav {
+    height: 100%;
+    width: 60px;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    background: #222b2f;
+    min-height: 500px;
+}
+
+
 body {
-  color: #fff;
-  // background-color: #EEEFE5;
-  background: #252627;
+  color: #373648;
+  background-color: #EEEFE5;
+  display: block;
 }
 
 a {
@@ -30,9 +38,16 @@ nav i.material-icons {
   font-size: 40px !important;
 }
 
-header, main, footer {
-  // padding-left: 60px;
+main, footer {
+  padding-left: 60px;
 }
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+}
+
 
 i.small {
   font-size: 1.6rem !important;
@@ -41,5 +56,66 @@ i.small {
 @media only screen and (max-width : 992px) {
   header, main, footer {
   padding-left: 0;
+  }
+}
+
+.logo:before {
+  content: "\e01a";
+  position:absolute;
+  top: -14px;
+  left: 9px;
+  color: #08fdd8;
+  font-size: 80px;
+  font-family: 'simple-line-icons';
+}
+.app-loading {
+  .logo {
+    width: 100px;
+    height: 100px;
+    position:relative;
+  }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.app-loading .spinner {
+  height: 200px;
+  width: 200px;
+  animation: rotate 2s linear infinite;
+  transform-origin: center center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.app-loading .spinner .path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  animation: dash 1.5s ease-in-out infinite;
+  stroke-linecap: round;
+  stroke: #ddd;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
   }
 }
