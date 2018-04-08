@@ -1,4 +1,10 @@
-.sibar-bar-nav {
+.nav-logo {
+    display: block;
+    padding: 18px;
+    background: #fff;
+}
+
+.sidebar-bar-nav {
   display: block;
   text-align: center;
   position: absolute;
@@ -15,6 +21,53 @@
     color: rgb(1, 249, 226);
   }
 }
+
+.sidebar-bar-nav a:hover .icon {
+  opacity: 0;
+}
+
+.sidebar-bar-nav a:hover:after {
+  opacity: 1;
+}
+
+.sidebar-bar-nav a:nth-child(1):after {
+  content: 'HOME';
+  top: 2px;
+  position:absolute;
+  color: #08fdd8;
+}
+.sidebar-bar-nav a:nth-child(2):after {
+  content: 'ABOUT';
+  top: 66px;
+  position:absolute;
+  color: #08fdd8;
+}
+.sidebar-bar-nav a:nth-child(3):after {
+  content: 'SKILLS';
+  bottom: 50px;
+  position:absolute;
+  color: #08fdd8;
+}
+.sidebar-bar-nav a:nth-child(4):after {
+  content: 'PROJECT';
+  bottom: -13px;
+  position:absolute;
+  color: #08fdd8;
+}
+
+.sidebar-bar-nav a:after {
+  content: '';
+  font-size: 9px;
+  letter-spacing: 2px;
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
 
 
 
