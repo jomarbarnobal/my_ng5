@@ -1,0 +1,39 @@
+.icon-pad {
+  margin-top: -43px;
+}
+
+.header span {
+  position: relative;
+  display: block;
+  margin-top: 30px;
+  font-size: 1.5em;
+  letter-spacing: .5em;
+}
+
+.header span:before {
+  content: '';
+  position: absolute;
+  border-bottom: 2px solid #5e5f6a;
+  top: 50px;
+  width: 90px;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.content {
+  padding-top: 50px;
+}
+
+.section-pad {
+  padding-bottom: 100px;
+}
+
+i.circle.white.large.icon-game-controller,
+i.circle.white.large.icon-energy,
+i.circle.white.large.icon-compass {
+    padding: 20px;
+}
+
+.white {
+  background-color: #eeefe5 !important;
+}
